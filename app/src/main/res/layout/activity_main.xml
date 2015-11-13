@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/fromCameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="captureImageFromCamera"
+            android:background="@mipmap/take_photo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+
+        <ImageButton
+            android:id="@+id/fromFileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="captureImageFromSdCard"
+            android:background="@mipmap/upload_photo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_button"
+            android:onClick="resultView"
+            android:id="@+id/tempButton"
+            android:layout_marginTop="70dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

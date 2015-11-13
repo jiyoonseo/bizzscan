@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">OCRtest2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="from_camera">From Camera</string>
+    <string name="from_file">From File</string>
+
+
+    <string name="temp_button"> Temp Button</string>
+
+    <string name="save">Save</string>
+    <string name="Cancel">Cancel</string>
+
+    <string name="title_activity_main">ABBYY Cloud OCR SDK Demo App</string>
+    <string name="title_activity_results">Result Activity</string>
+    <string name="hello">hello</string>
+    <string name="menu">Menu ha</string>
+
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="add">Address</string>
+
+    <string name="sample_name">Contact Name</string>
+    <string name="sample_phone">425 123 4567</string>
+    <string name="sample_email">this.is@email.com</string>
+    <string name="sample_address">1111 add st pl, Kirkland WA 98033</string>
+</resources>

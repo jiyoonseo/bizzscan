@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@color/material_blue_grey_800">
+            <ImageButton
+                android:id="@+id/go_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_keyboard_backspace_white_24dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent" />
+            <TextView
+                android:id = "@+id/result_name_textview"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/name"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <HorizontalScrollView
+                    android:id="@+id/hori_scroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hello_world" />
+                        <ImageView
+                            android:id="@+id/bcard_image_front_result"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bcard_front"/>
+                        <ImageView
+                            android:id="@+id/bcard_image_back_result"
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/bcard_back"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/phone"
+                            android:textSize="20sp"
+                            android:textColor="#50A7B3"
+                            android:layout_marginBottom="5dp"/>
+                        <View
+                            android:layout_height="1dp"
+                            android:layout_width="match_parent"
+                            android:background="#728C93"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:layout_weight="1">
+                                <AutoCompleteTextView
+                                    android:id="@+id/phone_number_result"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="@string/sample_phone"
+                                    android:textSize="18sp"
+                                    android:textColor="#696969"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@null"
+                                    android:paddingBottom="10dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end">
+
+                                <ImageButton
+                                    android:id="@+id/text_imgButton"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_textsms_black_24dp"
+                                    android:background="@android:color/transparent" />
+
+                                <ImageButton
+                                    android:id="@+id/call_imgButton"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_phone_black_24dp"
+                                    android:background="@android:color/transparent" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/email"
+                            android:textSize="20sp"
+                            android:textColor="#50A7B3"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="10dp"/>
+                        <View
+                            android:layout_height="1dp"
+                            android:layout_width="match_parent"
+                            android:background="#728C93"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:layout_weight="1">
+                                <AutoCompleteTextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:text="@string/sample_email"
+                                    android:textSize="18sp"
+                                    android:textColor="#696969"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@null"
+                                    android:paddingBottom="10dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end">
+
+                                <ImageButton
+                                    android:id="@+id/email_imgButton"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/ic_email_black_24dp"
+                                    android:background="@android:color/transparent" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/add"
+                            android:textSize="20sp"
+                            android:textColor="#50A7B3"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="10dp"/>
+                        <View
+                            android:layout_height="1dp"
+                            android:layout_width="match_parent"
+                            android:background="#728C93"/>
+                        <AutoCompleteTextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="@string/sample_address"
+                            android:textSize="18sp"
+                            android:textColor="#6D6D6D"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@null"
+                            android:paddingBottom="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@color/material_blue_grey_800">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/cancel_button"
+                android:src="@drawable/ic_clear_white_24dp"
+                android:background="@android:color/transparent"
+                android:layout_weight="2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Cancel"
+                android:id="@+id/cancel_text_button"
+                android:background="@null"
+                android:textColor="@color/background_floating_material_light"
+                android:layout_weight="2" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_done_white_24dp"
+                android:layout_weight="2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:id="@+id/save_text_button"
+                android:background="@null"
+                android:textColor="@color/background_floating_material_light"
+                android:layout_weight="3" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
