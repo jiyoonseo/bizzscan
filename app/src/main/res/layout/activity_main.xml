@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@mipmap/background"
+    android:background="#fff"
     android:orientation="vertical">
 
 
@@ -15,31 +15,40 @@
         android:layout_marginTop="0dp"
         android:gravity="center">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_logo"
+            android:src="@mipmap/home_logo"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
         <ImageButton
             android:id="@+id/fromCameraButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="captureImageFromCamera"
-            android:background="@mipmap/take_photo"
+            android:background="@mipmap/camera"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="10dp" />
 
         <ImageButton
             android:id="@+id/fromFileButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="captureImageFromSdCard"
-            android:background="@mipmap/upload_photo"
+            android:background="@mipmap/gallery"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp" />
+             />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/temp_button"
-            android:onClick="resultView"
+            android:onClick="saveContact"
             android:id="@+id/tempButton"
-            android:layout_marginTop="70dp" />
+            android:layout_marginTop="10dp" />
+
     </LinearLayout>
 
 

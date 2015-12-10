@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OCRtest2</string>
+    <string name="app_name">BizzScan</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -11,6 +11,8 @@
     <string name="temp_button"> Temp Button</string>
 
     <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="contact">Edit in Contact</string>
     <string name="Cancel">Cancel</string>
 
     <string name="title_activity_main">ABBYY Cloud OCR SDK Demo App</string>
@@ -19,10 +21,29 @@
     <string name="menu">Menu ha</string>
 
     <string name="name">Name</string>
+    <string name="title">Title</string>
     <string name="phone">Phone</string>
-    <string name="mobile">Mobile</string>
+    <string name="fax">Fax</string>
     <string name="email">Email</string>
+    <string name="url">URL</string>
+
+
+
+    <string name="mobile">Mobile</string>
     <string name="add">Address</string>
+
+    <string name="result">Result</string>
+
+    <string name="item01">Item #01</string>
+    <string name="item02">Item #02</string>
+    <string name="item03">Item #03</string>
+    <string name="item04">Item #04</string>
+    <string name="item05">Item #05</string>
+    <string name="item06">Item #06</string>
+    <string name="item07">Item #07</string>
+    <string name="item08">Item #08</string>
+    <string name="item09">Item #09</string>
+    <string name="item10">Item #10</string>
 
     <string name="sample_name">Contact Name</string>
     <string name="sample_phone">425 123 4567</string>
